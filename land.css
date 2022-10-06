@@ -1,0 +1,57 @@
+/*start global variable*/
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&family=Mulish&display=swap');
+:root{
+    --color:#000;
+    --color1: #916993;
+    --color2: #d0c993;
+    --color3: #fff;
+}
+/*end global variable*/
+/*start global componets*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    user-select: none;
+    height: 43em;
+    text-align: justify;
+    margin: 2em;
+    background-image:linear-gradient(rgba(3, 2, 41, 0.4), rgba(28, 1, 51, 0.7)), url(land.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    user-select: none;
+    font-family: 'Mulish', sans-serif;
+    color: var(--color3);
+    display: flex;
+    justify-content: space-between;
+}
+/* end global componets*/
+img {
+    filter: brightness(90%);
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 8vw;
+}
+aside {
+    margin-bottom: auto;
+    border-radius: 10px;
+    display: flex;
+    gap: 1.5em;
+    padding: 1em;
+    border: 3px solid var(--color1);
+    width: 35.5em;
+}
+aside p{
+    font-size: 1.2em;
+}
+section{
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 1em;
+    border: 2px solid var(--color1);
+    width: 32em;
+    margin-top: auto;
+}

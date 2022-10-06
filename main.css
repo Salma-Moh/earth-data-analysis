@@ -1,0 +1,96 @@
+/*start global variable*/
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&family=Mulish&display=swap');
+:root{
+    --color:#000;
+    --color1:#fff;
+    --color2: #d0c993;
+}
+/*end global variable*/
+/*start global componets*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    user-select: none;
+    color: var(--color1);
+    font-family: 'Mulish', sans-serif;
+}
+/* end global componets*/
+header {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10em;
+    width: 100%;
+    height: 45em;
+}
+header a {
+    color: var(--color2);
+    text-decoration: none;
+    width: 10em;
+    height: 5.5em;
+}
+header a h1{
+    transition: 1s;
+    opacity: 0;
+    padding: 1em;
+    position: relative;
+    top: -3em;
+}
+header img {
+    transition: 1s;
+    padding: 1em;
+    width: 10em;
+    height: 5.5em;
+}
+header a:hover img{ 
+    opacity: 0;
+    transition: 1s;
+}
+header a:hover h1 {
+    opacity: 1;
+}
+#bgvideo {
+    object-fit: cover;
+    filter: brightness(80%);
+    z-index: -2;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100%;
+}
+.text {
+    margin: auto;
+    width: 37em;
+    text-align: center;
+}
+nav {
+    margin-left: 12%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10%;
+    padding-left: 10%;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.select {
+    margin-left: 3%;
+    width: 60em;
+    height: 4em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    font-size: 1.5em;
+    margin-top: auto;
+    color: var(--color2);
+}
+nav a:hover{
+    cursor: pointer;
+}

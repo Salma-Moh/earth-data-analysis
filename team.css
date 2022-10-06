@@ -1,0 +1,81 @@
+/*start global variable*/
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&family=Mulish&display=swap');
+:root{
+    --color:#000;
+    --color1:#fff;
+    --color2: #d0c993;
+    --color3: #222121;
+    --color4: #3A3838;
+
+}
+/*end global variable*/
+/*start global componets*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    text-align: justify;
+    color: var(--color1);
+    margin-top: 2.5em;
+    margin-left: 5em;
+    margin-right: 5em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(spaceee.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    user-select: none;
+    font-family: 'Mulish', sans-serif;
+}
+/* end global componets*/
+header {
+    border-radius: 10px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgba(34,33,33,0.9);
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+}
+header img {
+    height: 2.5em;
+    width: 10%;
+}
+aside {
+    border-radius: 10px;
+    padding: 2em;
+    background-color: rgba(34,33,33,0.8);
+    margin: 2em;
+    height: 28em;
+    display: flex;
+    gap: 2em;
+}
+aside div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+    height: 35vh;
+    border-radius: 10px;
+    width: 30%;
+    margin: auto;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: var(--color4);
+    opacity: 90%;
+}
+aside img {
+    filter: brightness(80%);
+    margin: auto;
+    border-radius: 50%;
+    height: 50%;
+    width: 70%;
+}
+footer {
+    text-align: center;
+}

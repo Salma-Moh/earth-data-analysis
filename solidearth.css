@@ -1,0 +1,91 @@
+/*start global variable*/
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&family=Mulish&display=swap');
+:root{
+    --color:#000;
+    --color1:#fff;
+    --color2: #d0c993;
+}
+/*end global variable*/
+/*start global componets*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    user-select: none;
+    line-height: 1.5em;
+    font-size: larger;
+    margin: 10%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    user-select: none;
+    color: var(--color1);
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+/* end global componets*/
+#bgvideo {
+    object-fit: cover;
+    filter: brightness(80%);
+    z-index: -2;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100%;
+}
+hr {
+    color: var(--color1);
+    background-color: var(--color1);
+}
+img {
+    border: 2px solid grey;
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+}
+section{
+    margin-left: 1.5em;
+    font-size: 1em;
+    width: 40%;
+}
+aside {
+    margin: auto;
+    width: 50%;
+    display: flex;
+}
+aside div {
+    margin-left: 10%;
+}
+@media only screen and (max-width: 768px) and (min-width: 320px)
+{
+    body{
+        flex-wrap: wrap;
+    }
+    hr{
+        display: none;
+    }
+    aside{
+        width: 100%;
+        margin-bottom: 5em;
+    }
+    section{
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 1024px) and (min-width: 769px)
+{
+    aside{
+        margin: 0;
+        width: 50%;
+        display: block;
+    }
+}
