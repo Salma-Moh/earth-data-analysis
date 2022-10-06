@@ -41,7 +41,7 @@ aside {
     gap: 1.5em;
     padding: 1em;
     border: 3px solid var(--color1);
-    width: 35.5em;
+    width: 100%;
 }
 aside p{
     font-size: 1.2em;
@@ -51,11 +51,12 @@ section{
     font-size: 1.2em;
     padding: 1em;
     border: 2px solid var(--color1);
-    width: 32em;
+    width: 100%;
     margin-top: auto;
 }
 @media screen and (max-width:768px) {
     body {
+        gap: 1em;
         display: flex;
         flex-direction: column;
     }
