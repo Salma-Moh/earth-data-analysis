@@ -12,8 +12,11 @@
     box-sizing: border-box;
 }
 body {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Interaction.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
     user-select: none;
-    overflow: hidden;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 2%;
@@ -21,7 +24,7 @@ body {
     color:var(--color5);
 }
 header {
-    height: 7em;
+    height: auto;
     text-align: center;
     margin: auto;
     width: 50%;
@@ -55,9 +58,10 @@ footer{
     text-align: justify;
     color: var(--color2);
     display: flex;
-    gap: 20em;
+    gap: 10vw;
 }
 article {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -65,12 +69,12 @@ article {
 .top{
     border-radius: 10px;
     border: 2px solid var(--color5);
-    width: 35em;
+    width: 100%;
 }
 .bottom{
     border-radius: 10px;
     border: 2px solid var(--color5);
-    width: 35em;
+    width: 100%;
 }
 article p{
     margin: 1em;
@@ -78,14 +82,26 @@ article p{
 aside{
     border-radius: 10px;
     border: 2px solid var(--color5);
-    width: 50%;
+    width: 100%;
     text-align: right;
     margin-top: auto;
     margin-bottom: auto;
 }
 aside p{
     text-align: left;
-    width: 25em;
     margin: 1em;
 }
-
+@media screen and (max-width:610px) {
+    header {
+        width: 100%;
+    }
+    footer {
+        gap: 1em;
+        font-size: 0.8em;
+        display: flex;
+        flex-direction: column;
+    }
+    article{
+        width: 100%;
+    }
+}
