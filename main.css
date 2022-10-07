@@ -24,7 +24,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 34em;
+    height: 30em;
 }
 header a {
     color: var(--color2);
