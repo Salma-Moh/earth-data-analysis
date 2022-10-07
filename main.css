@@ -67,7 +67,7 @@ header a:hover h1 {
 }
 .text {
     margin: auto;
-    width: 37em;
+    width: 100%;
     text-align: center;
 }
 nav {
