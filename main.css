@@ -119,6 +119,9 @@ summary:focus{
     }
 }
 @media screen and (max-width:768px) {
+    header {
+        height: 45em;
+    }
     .explore {
         justify-content: space-evenly;
     }
