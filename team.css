@@ -82,7 +82,7 @@ aside img {
 footer {
     text-align: center;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:426px) {
     header h1 {
         height: 0em;
         width: 0em;
