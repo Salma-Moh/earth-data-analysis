@@ -33,9 +33,12 @@ header a {
     height: 5.5em;
 }
 header a h1{
+    margin-bottom: 1em;
     transition: 1s;
     opacity: 0;
-    padding: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
     position: relative;
     top: -3em;
 }
@@ -68,7 +71,6 @@ header a:hover h1 {
     text-align: center;
 }
 nav {
-    margin-left: 12%;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -88,7 +90,6 @@ nav {
 }
 nav a{
     font-size: 1.5em;
-    /* margin-top: auto; */
     color: var(--color2);
 }
 nav a:hover{
