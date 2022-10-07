@@ -74,4 +74,10 @@ header {
         padding-left: 1em;
         padding-right: 1em;
     }
+    .box img {
+        display: none;
+    }
+    .chat {
+        width: 100%;
+    }
 }
