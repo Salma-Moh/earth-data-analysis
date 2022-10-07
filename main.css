@@ -112,17 +112,19 @@ summary:focus{
     margin-right: 20px;
 }
 @media screen and (min-width:320px) and (max-width:1024px) {    
-    }    
     .text{
         padding-bottom: 14em;
         padding-top: 5em;
         width: 18em;
     }
+}
 @media screen and (max-width:768px) {
     .explore {
         justify-content: space-evenly;
     }
     nav {
+        width: 1px;
+        overflow: hidden;
         visibility: hidden;
     }
     .detail {
