@@ -21,20 +21,24 @@ body {
     margin-top: 2.5em;
     margin-left: 3em;
     margin-right: 3em;
+    margin-bottom: 2.5em;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(spaceee.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     user-select: none;
     font-family: 'Mulish', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
 }
 /* end global componets*/
 header {
     border-radius: 10px;
     padding-top: 1%;
     padding-bottom: 1%;
-    padding-left: 5%;
     padding-right: 5%;
+    padding-left: 5%;
     background-color: rgba(34,33,33,0.9);
     display: flex;
     justify-content: space-between;
@@ -48,7 +52,6 @@ aside {
     border-radius: 10px;
     padding: 2em;
     background-color: rgba(34,33,33,0.8);
-    margin: 2em;
     height: 28em;
     display: flex;
     gap: 2em;
@@ -79,10 +82,26 @@ aside img {
 footer {
     text-align: center;
 }
-@media screen and (min-width:320px) and (max-width:426px)
+@media screen and (max-width:768px) {
+    header h1 {
+        height: 0em;
+        width: 0em;
+        visibility: hidden;
+    }
+    header {
+        padding-left: 0;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width: 100%;
+    }
+    header img {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media screen and (max-width:426px)
 {
     aside{
-        margin-top: 2em;
         height: auto;
         display: block;
         width: 100%;
@@ -103,9 +122,6 @@ footer {
     header img{
         width: auto;
     }
-    header{
-        width: fit-content;
-    }
     h3{
         margin-top: 30px;
     }
@@ -116,11 +132,9 @@ footer {
 @media screen and (min-width:426px) and (max-width:768px)
 {
     aside{
-        margin-top: 2em;
         height: auto;
         display: block;
         width: 100%;
-        /* margin-left: auto; */
     
     }
     aside div{
