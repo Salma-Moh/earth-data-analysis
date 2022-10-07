@@ -73,7 +73,7 @@ header a:hover h1 {
 nav {
     display: flex;
     justify-content: space-between;
-    padding-top: 10%;
+    padding-top: 15%;
     padding-left: 5%;
     padding-right: 5%;
     width: 100%;
