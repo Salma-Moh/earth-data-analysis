@@ -19,12 +19,12 @@ body {
 }
 /* end global componets*/
 header {
+    margin: auto;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 10em;
     width: 100%;
-    height: 45em;
+    height: 34em;
 }
 header a {
     color: var(--color2);
@@ -71,22 +71,12 @@ header a:hover h1 {
     text-align: center;
 }
 nav {
-    border-radius: 10px;
     display: flex;
     justify-content: space-between;
     padding-top: 10%;
-    padding-left: 10%;
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.select {
-    margin-left: 3%;
-    width: 60em;
-    height: 4em;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
 }
 nav a{
     font-size: 1.5em;
@@ -101,7 +91,7 @@ details a{
 }
 .explore{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 details,
 .knowledge{
@@ -109,6 +99,7 @@ details,
     top: 2em;
 }
 .detail{
+    visibility: hidden;
     display: flex;
 }
 details summary{
@@ -120,43 +111,29 @@ summary:focus{
 .detail p{
     margin-right: 20px;
 }
-@media screen and (min-width:320px) and (max-width:1024px) {
-    nav{
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 100%;
-        position: relative;
-        bottom: 10em;
-    }
+@media screen and (min-width:320px) and (max-width:1024px) {    
     }    
     .text{
         padding-bottom: 14em;
         padding-top: 5em;
         width: 18em;
     }
-    nav a{
-        height: 50px;
-        width: auto;
+@media screen and (max-width:768px) {
+    .explore {
+        justify-content: space-evenly;
     }
+    nav {
+        visibility: hidden;
+    }
+    .detail {
+        visibility: visible;
+    }
+}
     @media screen and (min-width:1026px){
         .text {
             margin: auto;
             width: 37em;
             text-align: center;
-        }
-        nav {
-            margin-left: 12%;
-            border-radius: 10px;
-            display: flex;
-            justify-content: space-between;
-            padding-top: 10%;
-            padding-left: 10%;
-            width: 85%;
-            margin-left: auto;
-            margin-right: auto;
         }
     } 
     @media screen and (min-width:295px) and (max-width:430px){
